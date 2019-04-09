@@ -1,0 +1,13 @@
+<!doctype html> <!-- india.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>인도</title>
+    </head>
+    <body>
+    <p>TOP7 인도</p>
+    <p>수도 : 뉴델리</p>
+    <img src="india.jpg" border=0>
+  </body>
+</html>
