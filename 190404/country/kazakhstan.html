@@ -3,11 +3,15 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <script>
+		function eventonclick() {
+		document.getElementById("id").innerHTML="수도 : 아스타나";
+		}
     <title>카자흐스탄</title>
     </head>
     <body>
     <p>TOP9 카자흐스탄</p>
-    <p>수도 : 아스타나</p>
+    <p onclick="eventonclick()" id="id">수도 : ??</p>
     <img src="kazakhstan.jpg" border=0>
   </body>
 </html>
