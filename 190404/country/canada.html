@@ -3,11 +3,16 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script>
+		function eventonclick() {
+		document.getElementById("id").innerHTML="수도 : ";
+		}
+	</script>
     <title>캐나다</title>
     </head>
     <body>
     <p>TOP2 캐나다</p>
-    <p>수도 : 오타와</p>
+    <p onclick="eventonclick()" id="id">수도 : ??</p>
     <img src="canada.jpg" border=0>
   </body>
 </html>
