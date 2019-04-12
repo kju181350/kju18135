@@ -1,9 +1,10 @@
-<!doctype html> <!-- linkSelect.html -->
+<!doctype html>
+<!-- linkSelect.html -->
 <html lang="ko">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script language="javascript">
         function firstIf(e) {
             var tar1 = document.getElementById("third");
             var unisel = ["대학 선택"];
@@ -15,20 +16,14 @@
                 opt1.innerHTML = t[x];
                 tar1.appendChild(opt1);
             }
-            
-
             area = e.value;
-            var secondL = ["국공립/사립 선택", "국공립", "사립"];
-            var not = ["지역 선택을 하시오"];
+            var secondL = ["구분 선택", "국공립", "사립"];
+            var not = ["구분 선택"];
             var target = document.getElementById("second");
-
-            
             if(e.value != "not")
                 var s = secondL;
             else var s = not;
-            
             target.options.length = 0;
-            
             for(x in s){
                 var opt = document.createElement("option");
                 opt.value = s[x];
@@ -38,11 +33,11 @@
         }
                 var area = "not";
         function secondIf(f) {
-            var not = ["국공립/사립 선택을 하시오"];
+            var not = ["대학 선택"];
             var th_se_k = ["대학 선택", "KAIST(서울캠퍼스)", "서울대학교", "서울과학기술대학교", "서울교육대학교", "서울시립대학교", "육군사관학교", "한국방송통신대학교", "한국방송통신대학교(서울지역대학)", "한국예술종합대학교", "한국예술종합대학교(서초동캠퍼스)", "한국체육대학교"];
             var th_se_s = ["대학 선택", "KC대학교", "가톨릭대학교(성신교정)", "가톨릭대학교(성의교정)", "감리교신학대학교", "건국대학교", "경기대학교(서울캠퍼스)", "경희대학교", "경희사이버대학교", "고려대학교", "고려사이버대학교", "광운대학교", "국민대학교", "덕성여자대학교", "덕성여자대학교 종로캠퍼스", "동국대학교", "동덕여자대학교", "디지털서울문화예술대학교", "명지대학교", "사이버한국외국어대학교", "삼육대학교", "상명대학교", "서강대학교", "서경대학교", "서울기독대학교", "서울디지털대학교", "서울사이버대학교", "서울여자대학교", "서울여자대학교(대학로캠퍼스)", "서울한영대학교", "성공회대학교", "성균관대학교", "성신여자대학교", "성신여자대학교 운정그린캠퍼스", "세종대학교", "세종사이버대학교", "숙명여자대학교", "숭실대학교", "숭실사이버대학교", "연세대학교", "이화여자대학교", "장로회신학대학교", "중앙대학교", "총신대학교", "추계예술대학교", "한국성서대학교", "한국열린사이버대학교", "한국외국어대학교", "한성대학교", "한양대학교", "한양사이버대학교", "홍익대학교"];
             var th_si_k = ["대학 선택", "KAIST", "KAIST(문지캠퍼스)", "UNIST", "경북대학교", "경인교육대학교", "광주과학기술원", "광주교육대학교", "국군간호사관학교", "대구경북과학기술원", "대구교육대학교", "부경대학교", "부경대학교(용당캠퍼스)", "부산교육대학교", "부산대학교", "인천대학교", "전남대학교", "제주대학교", "제주대학교(사라캠퍼스)", "충남대학교", "충남대학교(보운캠퍼스)", "한국방송통신대학교(광주전남지역대학)", "한국방송통신대학교(대구경북지역대학)", "한국방송통신대학교(대전충남지역대학)", "한국방송통신대학교(부산지역대학)", "한국방송통신대학교(울산지역대학)", "한국방송통신대학교(제주지역대학)", "한국해양대학교", "한밭대학교", "한밭대학교(대덕산학융합캠퍼스)"];
-            var th_si_s = ["대학 선택", "가천대학교(메디컬캠퍼스)", "건양대학교대전메디컬캠퍼스", "건양사이버대학교", "경성대학교", "계명대학교", "계명대학교(대명캠퍼스)", "고려대학교(세종캠퍼스)", "고신대학교", "고신대학교(송도캠퍼스)", "광신대학교", "광주대학교", "광주여자대학교", "남부대학교", "대구가톨릭대학교(루가캠퍼스)", "대구가톨릭캠퍼스(유스티노캠퍼스)", "대구대학교(대명동캠퍼스)", "대구한의대캠퍼스(수성캠퍼스)", "대전가톨릭대학교", "대전대학교", "대전신학대학교", "동명대학교", "동서대학교" , "동아대학교", "동아대학교(구덕캠퍼스)", "동아대학교(부민캠퍼스)", "동의대학교", "동의대학교(양정캠퍼스)", "목원대학교", "배재대학교", "부산가톨릭대학교", "부산가톨릭대학교(메리놀교정)", "부산가톨릭대학교(신학교정)", "부산디지털대학교", "부산외국어대학교", "송원대학교", "신라대학교", "안양대학교(강화캠퍼스)", "연세대학교 국제캠퍼스", "영남대학교 의학전문대학원 /의과대학", "영산대학교(해운대캠퍼스)", "우송대학교", "울산대학교", "을지대학교", "인제대학교(부산캠퍼스)", "인천가톨릭대학교", "인천가톨릭대학교(강화캠퍼스)", "인하대학교", "제주국제대학교", "조선대학교", "청운대학교(인천캠퍼스)", "침례신학대학교", "한남대학교", "호남대학교", "호남신학대학교", "홍익대학교(세종캠퍼스)", "화신사이버대학교"];
+            var th_si_s = ["대학 선택", "가천대학교(메디컬캠퍼스)", "건양대학교대전메디컬캠퍼스", "건양사이버대학교", "경성대학교", "계명대학교", "계명대학교(대명캠퍼스)", "고려대학교(세종캠퍼스)", "고신대학교", "고신대학교(송도캠퍼스)", "광신대학교", "광주대학교", "광주여자대학교", "남부대학교", "대구가톨릭대학교(루가캠퍼스)", "대구가톨릭캠퍼스(유스티노캠퍼스)", "대구대학교(대명동캠퍼스)", "대구한의대캠퍼스(수성캠퍼스)", "대전가톨릭대학교", "대전대학교", "대전신학대학교", "동명대학교", "동서대학교" , "동아대학교", "동아대학교(구덕캠퍼스)", "동아대학교(부민캠퍼스)", "동의대학교", "동의대학교(양정캠퍼스)", "목원대학교", "배재대학교", "부산가톨릭대학교", "부산가톨릭대학교(메리놀교정)", "부산가톨릭대학교(신학교정)", "부산디지털대학교", "부산외국어대학교", "송원대학교", "신라대학교", "안양대학교(강화캠퍼스)", "연세대학교 국제캠퍼스", "영남대학교 의학전문대학원/의과대학", "영산대학교(해운대캠퍼스)", "우송대학교", "울산대학교", "을지대학교", "인제대학교(부산캠퍼스)", "인천가톨릭대학교", "인천가톨릭대학교(강화캠퍼스)", "인하대학교", "제주국제대학교", "조선대학교", "청운대학교(인천캠퍼스)", "침례신학대학교", "한남대학교", "호남대학교", "호남신학대학교", "홍익대학교(세종캠퍼스)", "화신사이버대학교"];
             var th_ky_k = ["대학 선택", "경인교육대학교(경기캠퍼스)", "한경대학교", "한국교통대학교(의왕캠퍼스)"];
             var th_ky_s = ["대학 선택", "가천대학교", "가톨릭대학교", "강남대학교", "경기대학교", "경동대학교 Metropol캠퍼스", "경희대학교(국제캠퍼스)", "국제사이버대학교", "단국대학교", "대진대학교", "동국대학교(바이오메디캠퍼스)", "동양대학교(북서울캠퍼스)", "루터대학교", "명지대학교(자연캠퍼스)", "서울신학대학교", "서울장신대학교", "성결대학교", "성균관대학교(자연과학캠퍼스)", "수원가톨릭대학교", "수원대학교", "신경대학교", "신한대학교 동두천캠퍼스", "신한대학교 의정부캠퍼스", "아세아연합신학대학교", "아주대학교", "안양대학교", "예원예술대학교 양주캠퍼스", "용인대학교", "을지대학교(성남캠퍼스)", "중부대학교(고양캠퍼스)", "중앙대학교(안성캠퍼스)", "중앙승가대학교", "차의과학대학교", "총신대학교(양지캠퍼스)", "칼빈대학교", "평택대학교", "한국산업기술대학교", "한국외국어대학교(글로벌캠퍼스)", "한국항공대학교", "한세대학교", "한신대학교", "한양대학교(ERICA캠퍼스)", "협성대학교"];
             var th_kw_k = ["대학 선택", "강릉원주대학교", "강릉원주대학교(원주캠퍼스)", "강원대학교", "강원대학교(도계캠퍼스)", "강원대학교(삼척캠퍼스)", "춘천교육대학교", "한국방송통신대학교(강원지역대학교)"];
@@ -56,7 +51,6 @@
             var th_jj_k = ["대학 선택", "제주대학교", "제주대학교(사라캠퍼스)", "한국방송통신대학교(제주지역대학)"];
             var th_jj_s = ["대학 선택", "제주국제대학교"];
             var target = document.getElementById("third");
-            
             if(area == "seoul" &&  f.value == "국공립")
                 var t = th_se_k;
             else if(area =="seoul" && f.value =="사립")
@@ -90,9 +84,7 @@
             else if(area == "jeju" && f.value == "사립")
                 var t = th_jj_s;
             else var t = not;
-            
             target.options.length = 0;
-            
             for(x in t){
                 var opt = document.createElement("option");
                 opt.value = t[x];
@@ -100,29 +92,75 @@
                 target.appendChild(opt);
             }           
         }
+        function printAll(frm){
+            if(frm.sarea.options[frm.sarea.selectedIndex].text == "지역 선택" || frm.sdivision.options[frm.sdivision.selectedIndex].text == "구분 선택" || frm.suniversity.options[frm.suniversity.selectedIndex].text == "대학 선택" ){
+                 frm.area.value =  "정확한 값을 선택해주세요.";
+                 frm.division.value = "정확한 값을 선택해주세요.";
+                 frm.university.value = "정확한 값을 선택해주세요.";
+                 alert("정확한 값을 선택해주세요!");
+            } else {
+            frm.area.value =  frm.sarea.options[frm.sarea.selectedIndex].text;
+            frm.division.value = frm.sdivision.options[frm.sdivision.selectedIndex].text;
+            frm.university.value = frm.suniversity.options[frm.suniversity.selectedIndex].text;
+                }
+        }
     </script>
-    <title>다중 select 실습</title>
-    </head>
-    <body>
-    <select onchange="firstIf(this)">
-        <option value="not">지역 선택</option>
-        <option value="seoul">서울</option>
-        <option value="sixcity">6대광역시</option>
-        <option value="kyungki">경기도</option>
-        <option value="kangwon">강원도</option>
-        <option value="chungcheong">충청도</option>
-        <option value="junra">전라도</option>
-        <option value="gyeongsang">경상도</option>
-        <option value="jeju">제주도</option>
-        </select>
-        
-        <select onchange="secondIf(this)" id="second">
-        <option>국공립/사립 선택</option>
-        </select>
-        
-        <select id="third">
-        <option value="not">대학 선택</option>
-        </select>
-        
-    </body>
+<title>다중 select 실습</title>
+</head>
+<body>
+<form name="form" method="post">
+	<div style="height: 19px; width: 85px; border:2px solid gold; float:left;">
+		<select name="sarea" onchange="firstIf(this);" name="fir">
+			<option value="not">지역 선택</option>
+			<option value="seoul">서울</option>
+			<option value="sixcity">6대광역시</option>
+			<option value="kyungki">경기도</option>
+			<option value="kangwon">강원도</option>
+			<option value="chungcheong">충청도</option>
+			<option value="junra">전라도</option>
+			<option value="gyeongsang">경상도</option>
+			<option value="jeju">제주도</option>
+		</select>
+	</div>
+	<div style="height: 19px; width: 80px; border:2px solid gold; float:left;">
+		<select name="sdivision" onchange="secondIf(this);" id="second" name="sec">
+			<option>구분 선택</option>
+		</select>
+	</div>
+	<div style="height: 19px; width: 260px; border:2px solid gold; float:left;">
+		<select name="suniversity" id="third" name="thi">
+			<option value="not">대학 선택</option>
+		</select>
+	</div>
+	<input type="button" value="확인" onclick="printAll(this.form);"/>
+	<button>초기화</button>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<table border="1" width="500" bgcolor="#fffee9" align="left" cellspacing="0" cellpadding="3" bordercolor="#000000" bordercolordark="#ffffff" bordercolorlight="#fddc78">
+	<tr>
+		<td align="left" width="100" bgcolor="#fffecc">
+			<font color="#0000ff"><b>!</b></font>지역 :
+		</td>
+		<td widht="400">
+			<input name="area" type="text" size="50" maxlength="50">
+		</td>
+	</tr>
+	<tr>
+		<td align="left" width="100" bgcolor="#fffecc">
+			<font color="#0000ff"><b>!</b></font>구분 :
+		</td>
+		<td width="400">
+			<input name="division" type="text" size="50" maxlength="50">
+		</td>
+	</tr>
+	<tr>
+		<td align="left" width="100" bgcolor="#fffecc">
+			<font color="#0000ff"><b>!</b></font>대학 :
+		</td>
+		<td width="400">
+			<input name="university" type="text" size="50" maxlength="50">
+		</td>
+	</tr>
+	</table>
+</form>
+</body>
 </html>
