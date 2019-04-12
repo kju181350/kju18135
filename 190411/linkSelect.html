@@ -108,7 +108,7 @@
 <title>다중 select 실습</title>
 </head>
 <body>
-<form name="form" method="post">
+<form name="form" method="post" form="linkSelect.html">
 	<div style="height: 19px; width: 85px; border:2px solid gold; float:left;">
 		<select name="sarea" onchange="firstIf(this);" name="fir">
 			<option value="not">지역 선택</option>
@@ -133,7 +133,7 @@
 		</select>
 	</div>
 	<input type="button" value="확인" onclick="printAll(this.form);"/>
-	<button>초기화</button>
+	<input type="submit" value="초기화">
 	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 	<table border="1" width="500" bgcolor="#fffee9" align="left" cellspacing="0" cellpadding="3" bordercolor="#000000" bordercolordark="#ffffff" bordercolorlight="#fddc78">
 	<tr>
