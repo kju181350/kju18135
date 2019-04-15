@@ -1,0 +1,51 @@
+<!doctype html>
+<!-- subLinkSelect.html -->
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script language="javascript">
+    var after = unescape(location.href);
+    var temp = after.split("?");
+    var t = temp[1].split(":");
+    var t2 = t[1].split(";");
+    function printAll() {
+    document.getElementById("area").value = unescape(t[0]);
+    document.getElementById("division").value = unescape(t2[0]);
+    document.getElementById("university").value = unescape(t2[1]);
+    }
+    </script>
+<title>다중 select 실습</title>
+</head>
+<body onload="printAll();">
+<form name="form" method="post">
+	<table border="1" width="500" bgcolor="#fffee9" align="left" cellspacing="0" cellpadding="3" bordercolor="#000000" bordercolordark="#ffffff" bordercolorlight="#fddc78">
+	<tr>
+		<td align="left" width="100" bgcolor="#fffecc">
+			<font color="#0000ff"><b>!</b></font>지역 :
+		</td>
+		<td widht="400">
+			<input name="area" id="area" type="text" size="50" maxlength="50" value="" )>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" width="100" bgcolor="#fffecc">
+			<font color="#0000ff"><b>!</b></font>구분 :
+		</td>
+		<td width="400">
+			<input name="division" id="division" type="text" size="50" maxlength="50">
+		</td>
+	</tr>
+	<tr>
+		<td align="left" width="100" bgcolor="#fffecc">
+			<font color="#0000ff"><b>!</b></font>대학 :
+		</td>
+		<td width="400">
+			<input name="university" id="university" type="text" size="50" maxlength="50">
+		</td>
+	</tr>
+	</table>
+	<input type="button" value="돌아가기" onclick="location.href='linkSelect.html'">
+</form>
+</body>
+</html>
