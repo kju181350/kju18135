@@ -5,18 +5,31 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style>
-    input#des{
-    background-color: #E5E5E5;
-   background-position: 97% center;
-   background-repeat: no-repeat;
-   border: 1px solid #AAA;
-   color: #555;
-   font-size: inherit;
-   margin: 20px;
-   overflow: hidden;
-   padding: 5px 10px;
-   text-overflow: ellipsis;
-   width: 100px;
+input#des {
+	background-color:#E5E5E5;
+	background-position:97% center;
+	background-repeat:no-repeat;
+	border:1px solid #AAA;
+	color:#555;
+	font-size:inherit;
+	margin:0px 10px;
+	overflow:hidden;
+	padding:5px 10px;
+	text-overflow:ellipsis;
+	width:100px;
+}
+input#nav {
+	background-color:#40FF00;
+	background-position:97% center;
+	background-repeat:no-repeat;
+	border:1px solid #0B610B;
+	color:#0B610B;
+	margin:10px 10px;
+	font-size:inherit;
+	overflow:hidden;
+	padding:5px 10px;
+	text-overflow:ellipsis;
+	width: 200px;
 }
 </style>
 <script language="javascript">
@@ -29,38 +42,48 @@
     document.getElementById("division").value = unescape(t2[0]);
     document.getElementById("university").value = unescape(t2[1]);
     }
+    function search(e){
+        window.open('https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=' + e.university.value);
+    }
     </script>
 <title>다중 select 실습</title>
 </head>
 <body onload="printAll();">
 <form name="form" method="post">
-	<table border="1" width="500" bgcolor="#fffee9" align="left" cellspacing="0" cellpadding="3" bordercolor="#000000" bordercolordark="#ffffff" bordercolorlight="#fddc78">
-	<tr>
-		<td align="left" width="100" bgcolor="#fffecc">
-			<font color="#0000ff"><b>!</b></font>지역 :
-		</td>
-		<td width="400">
-			<input name="area" id="area" type="text" size="50" maxlength="50" value="" readonly>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" width="100" bgcolor="#fffecc">
-			<font color="#0000ff"><b>!</b></font>구분 :
-		</td>
-		<td width="400">
-			<input name="division" id="division" type="text" size="50" maxlength="50" readonly>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" width="100" bgcolor="#fffecc">
-			<font color="#0000ff"><b>!</b></font>대학 :
-		</td>
-		<td width="400">
-			<input name="university" id="university" type="text" size="50" maxlength="50" readonly>
-		</td>
-	</tr>
-	</table>
-	<input id="des" type="button" value="돌아가기" onclick="location.href='linkSelect.html'">
+	<div style="height: auto; width: 700px; border:0px solid white;">
+		<div style="height: auto; width: 500px; border:0px solid white;">
+			<table border="1" width="500" bgcolor="#fffee9" align="left" cellspacing="0" cellpadding="3" bordercolor="#000000" bordercolordark="#ffffff" bordercolorlight="#fddc78">
+			<tr>
+				<td align="left" width="100" bgcolor="#fffecc">
+					<font color="#0000ff"><b>!</b></font>지역 :
+				</td>
+				<td width="400">
+					<input name="area" id="area" type="text" size="50" maxlength="50" value="" readonly>
+				</td>
+			</tr>
+			<tr>
+				<td align="left" width="100" bgcolor="#fffecc">
+					<font color="#0000ff"><b>!</b></font>구분 :
+				</td>
+				<td width="400">
+					<input name="division" id="division" type="text" size="50" maxlength="50" readonly>
+				</td>
+			</tr>
+			<tr>
+				<td align="left" width="100" bgcolor="#fffecc">
+					<font color="#0000ff"><b>!</b></font>대학 :
+				</td>
+				<td width="400">
+					<input name="university" id="university" type="text" size="50" maxlength="50" readonly>
+				</td>
+			</tr>
+			</table>
+		</div>
+		<div style="height: auto; width: 200px; border:0px solid white; float:right;">
+			<input id="nav" type="button" value="네이버에 검색하기" onclick="search(this.form)">
+			<input id="des" type="button" value="돌아가기" onclick="location.href='linkSelect.html'">
+		</div>
+	</div>
 </form>
 </body>
 </html>
