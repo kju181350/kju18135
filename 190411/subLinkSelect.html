@@ -4,6 +4,21 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+    input#des{
+    background-color: #E5E5E5;
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   margin: 20px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   width: 100px;
+}
+</style>
 <script language="javascript">
     var after = unescape(location.href);
     var temp = after.split("?");
@@ -45,7 +60,7 @@
 		</td>
 	</tr>
 	</table>
-	<input type="button" value="돌아가기" onclick="location.href='linkSelect.html'">
+	<input id="des" type="button" value="돌아가기" onclick="location.href='linkSelect.html'">
 </form>
 </body>
 </html>
