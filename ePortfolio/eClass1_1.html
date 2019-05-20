@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>ePortfolio</title>
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">			
+                                <li><a class="gn-icon gn-icon-article">학력</a></li>
+                                <li><a class="gn-icon gn-icon-article">경력</a></li>
+                                <li><a class="gn-icon gn-icon-article selectmenu" href="eClass1_1.html">수업 수강 내역</a></li>
+                                <li><a class="gn-icon gn-icon-article" href="eProject_1.html">과목별 프로젝트 설명</a></li>
+                                <li><a class="gn-icon gn-icon-article">공모전</a></li>
+                                <li><a class="gn-icon gn-icon-article">동아리</a></li>
+                                <li><a class="gn-icon gn-icon-article">봉사활동</a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+                <li><a class="selectmenu" href="eClass1_1.html">1-1</a></li>
+                <li><a href="eClass1_2.html">1-2</a></li>
+                <li><a href="eClass2_1.html">2-1</a></li>
+                <li><a onclick="notError();">2-2</a></li>
+                <li><a onclick="notError();">3-1</a></li>
+                <li><a onclick="notError();">3-2</a></li>
+                <li><a onclick="notError();">4-1</a></li>
+                <li><a onclick="notError();">4-2</a></li>
+				<li><a class="codrops-icon codrops-icon-drop" href="http://www.github.com/kju181350"><span>GitHub</span></a></li>
+			</ul>
+            <br/><br/><br/>
+				  <table width="470" height = "740" align="center" >
+  <caption> &lt;1학년 1학기&gt; 시간표 <br/></caption>
+  <thead>
+    <tr height = "10" ><th width = "10"></th><th width = "90">월</th><th width = "90">화</th><th width = "90">수</th><th width = "90">목</th><th width = "90">금</th></tr>
+  </thead>
+  <tbody>
+    <tr><td align=right>9</td><td rowspan="3" class = "subject1"> 이산수학<br/>6422</td><td rowspan="3" class = "subject2">예술문화의<br/>융합적이해<br/>22110</td><td rowspan="2" class = "subject3">영어강독<br/>22225</td><td class = "subject4">비전탐색<br/>24123</td><td></td></tr>  <!-- 1 -->
+    <tr><td align=right>10</td><td></td><td></td></tr>  <!-- 2 -->
+    <tr><td align=right>11</td><td rowspan="2" class="subject6">소프트웨어<br/>디자인<br/>6423</td><td rowspan="2" class="subject1">글쓰기기초<br/>22220</td><td></td></tr>  <!-- 3 -->
+    <tr><td align=right>12</td><td rowspan = "3" class = "subject5">경제학의<br/>기본원리</td><td></td><td></td></tr>  <!-- 4 --> 
+    <tr><td align=right>1</td><td></td><td></td><td></td><td></td></tr>  <!-- 5 -->
+    <tr><td align=right>2</td><td></td><td></td><td></td><td></td></tr>  <!-- 6 -->
+    <tr><td align=right>3</td><td></td><td rowspan="2" class = "subject3">탁구<br/>18309</td><td></td><td></td><td></td></tr>  <!-- 7 -->
+    <tr><td align=right>4</td><td></td><td></td><td></td><td></td></tr> <!-- 8 -->
+    <tr><td align=right>5</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- 9 -->
+  </tbody>
+  </table>	
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
+		<script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+	</body>
+</html>

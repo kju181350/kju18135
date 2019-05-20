@@ -1,0 +1,80 @@
+<!doctype html> <!--timeTable.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>table, tr, th, td {
+      border: 1px solid black;  border-collapse: collapse;
+    }</style>  
+    <style> .subject1{
+      background-color:#f9e0e3;
+      color:#52524a;
+      font-weight: bold;
+      }
+     .subject2{
+      background-color:#d1fadc;
+      color:#52524a;
+      font-weight: bold;
+      }
+     .subject3{
+      background-color:#faf1d0;
+      color:#52524a;
+      font-weight: bold;
+      }
+     .subject4{
+      background-color:#f6fdd1;
+      color:#52524a;
+      font-weight: bold;
+      }
+     .subject5{
+      background-color:#c2f8f8;
+      color:#52524a;
+      font-weight: bold;
+      }  
+     .subject6{
+      background-color:#fcebdb;
+      color:#52524a;
+      font-weight: bold;
+      }
+     .subject7{
+      background-color:#d9f2ca;
+      color:#52524a;
+      font-weight: bold;
+      }
+     table{
+      background-color:#f6fefe;
+      color:#e0b8bc;
+      font-weight: bold;
+      }
+     caption{
+        font-size: 1.5em;
+        color: orange;
+        font-weight: bold;
+      }
+    tbody > tr{
+        height: 75px;
+        vertical-align: top;
+      }
+    }</style>    
+  <title>시간표</title>
+  </head>
+  <body>
+  <table width="470" height = "740">
+  <caption> &lt;2019 1학기&gt; 시간표 <br/></caption>
+  <thead>
+    <tr height = "10" ><th width = "10"></th><th width = "90">월</th><th width = "90">화</th><th width = "90">수</th><th width = "90">목</th><th width = "90">금</th></tr>
+  </thead>
+  <tbody>
+    <tr><td align=right>9</td><td rowspan="3" class = "subject1"> 과학기술과<br/>통계<br/>6422</td><td rowspan="2" class = "subject2">오토마타와<br/>응용<br/>24402</td><td rowspan="2" class = "subject3">자료구조및<br/>실습<br/>24403</td><td></td><td></td></tr>  <!-- 1 -->
+    <tr><td align=right>10</td><td></td><td></td></tr>  <!-- 2 -->
+    <tr><td align=right>11</td><td rowspan = "2" class = "subject3">자료구조및<br/>실습<br/>24403</td><td></td><td></td><td></td></tr>  <!-- 3 -->
+    <tr><td align=right>12</td><td></td><td rowspan="2"  class = "subject5">인터넷<br/>프로그래밍<br/>24403</td><td class = "subject2">오토마타와<br/>응용<br/>24402</td><td></td></tr>  <!-- 4 -->
+    <tr><td align=right>1</td><td></td><td class = "subject4">디지털<br/>논리회로<br/>24406</td><td rowspan="2"  class = "subject5">인터넷<br/>프로그래밍<br/>24403</td><td></td></tr>  <!-- 5 -->
+    <tr><td align=right>2</td><td rowspan = "2" class = "subject4">디지털<br/>논리회로<br/>24406</td><td></td><td rowspan="4" class = "subject6">C++<br/>프로그래밍<br/>24414</td><td></td></tr>  <!-- 6 -->
+    <tr><td align=right>3</td><td></td><td rowspan = "2" class = "subject7">캠퍼스<br/>멘토링</td><td></td></tr>  <!-- 7 -->
+    <tr><td align=right>4</td><td></td><td></td><td></td></tr> <!-- 8 -->
+    <tr><td align=right>5</td><td></td><td></td><td></td><td></td></tr> <!-- 9 -->
+  </tbody>
+  </table>
+  </body>
+</html>
