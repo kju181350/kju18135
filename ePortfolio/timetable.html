@@ -55,14 +55,24 @@
         height: 75px;
         vertical-align: top;
       }
-    }</style>    
+    thead > tr{
+        height: 10px;
+        vertical-align: top;   
+    }
+    thead > tr > th{
+        width: 90px;
+    }
+    thead > tr > td{
+         width: 10px;
+    }
+    </style>    
   <title>시간표</title>
   </head>
   <body>
   <table width="470" height = "740">
   <caption> &lt;2019 1학기&gt; 시간표 <br/></caption>
   <thead>
-    <tr height = "10" ><th width = "10"></th><th width = "90">월</th><th width = "90">화</th><th width = "90">수</th><th width = "90">목</th><th width = "90">금</th></tr>
+    <tr><td width="10"></td><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
   </thead>
   <tbody>
     <tr><td align=right>9</td><td rowspan="3" class = "subject1"> 과학기술과<br/>통계<br/>6422</td><td rowspan="2" class = "subject2">오토마타와<br/>응용<br/>24402</td><td rowspan="2" class = "subject3">자료구조및<br/>실습<br/>24403</td><td></td><td></td></tr>  <!-- 1 -->

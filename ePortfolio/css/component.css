@@ -69,6 +69,16 @@
 table, tr, th, td {
       border: 1px solid black;  border-collapse: collapse;
     }
+table{
+    height: 75%;
+    width: 60%
+}
+thead > tr > td{
+    width: %;
+}
+thead > tr > th{
+    width: 19%;
+}
 .gn-menu-main,
 .gn-menu-main,
 .gn-menu-main ul {
