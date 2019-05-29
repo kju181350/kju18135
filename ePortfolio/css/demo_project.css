@@ -1,0 +1,224 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background: #34495e;
+}
+
+.container > header,
+.codrops-top {
+	color: #fff;
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+.container > header {
+	margin: 0 auto;
+	padding: 8em 0em;
+	padding-left: 300px;
+	background: rgba(0,0,0,0.05);
+}
+
+.container > header a {
+	color: #566473;
+	text-decoration: none;
+	outline: none;
+}
+
+.container > header a:hover {
+	color: #4f7bab;
+}
+
+.container > header h1 {
+	font-size: 3.2em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+}
+
+.container > header span {
+	display: block;
+	font-size: 55%;
+	color: #74818e;
+	padding: 0 0 0.6em 0.1em;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.6);
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	text-decoration: none;
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #888;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.95);
+	color: #333;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Demo Buttons Style */
+.codrops-demos {
+	padding-top: 1em;
+	font-size: 0.9em;
+}
+
+.codrops-demos a {
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0.7em 1.1em;
+	border: 3px solid #b1aea6;
+	color: #b1aea6;
+	font-weight: 700;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a.current-demo,
+.codrops-demos a.current-demo:hover {
+	border-color: #89867e;
+	color: #89867e;
+}
+
+
+
+.video_1{
+    margin-left: 100px;
+    margin-bottom: 75px;
+    height: 30%;
+    width: 50%;
+}
+
+.img_1{
+    height: 30%;
+    width: 30%;
+}
+
+.img_2{
+    height: 10%;
+    width: 30%;
+    margin-top: 5%;
+}
+
+.img_3{
+    height: 10%;
+    width: 45%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+}
+
+.img_3{
+    height: 10%;
+    width: 45%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+}
+
+
+.img_4{
+    height: 100%;
+    width: 70%;
+    margin-top: 2%;
+}
+
+.img_5{
+    height: 100%;
+    width: 80%;
+}
+
+@media screen and (max-width: 740px) {
+
+    
+    .container > header {
+		margin: 0 auto;
+		padding: 120px 50px;
+		font-size: 70%;
+		text-align: right;
+	}
+    
+	.codrops-icon span {
+		display: none;
+	}
+    
+    .video_1{
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+
+    .img_1 {
+        width: 100%;
+    }
+    .img_2 {
+        width: 200%;
+        margin-right: 13%;
+    }
+    .img_3 {
+        margin-top: 5%;
+        width: 195%;
+        margin-right: 13%;
+    }
+    
+    .img_4{
+        height: 100%;
+        width: 190%;
+        margin-top: 2%;
+        margin-right: 13%;
+    }
+    
+    .img_5{
+    height: 100%;
+    width: 100%;
+    margin-right: 4%;
+}
+}
+
+}
