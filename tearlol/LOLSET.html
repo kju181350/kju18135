@@ -26,7 +26,7 @@
             }
             var redt = ccsc[0] + ccsc[1] + ccsc[2] + ccsc[3] + ccsc[4];
             var bluet = ccsc[5] + ccsc[6] + ccsc[7] + ccsc[8] + ccsc[9];
-            if(redt - bluet > -5  && redt- bluet < 5){
+            if(redt - bluet > -7  && redt- bluet < 7){
                 $('#setplayer1').val(ccname[0] + ' : ' + ccte[0]);
                 $('#setplayer2').val(ccname[1] + ' : ' + ccte[1]);
                 $('#setplayer3').val(ccname[2] + ' : ' + ccte[2]);
@@ -39,48 +39,13 @@
                 $('#setplayer10').val(ccname[9] + ' : ' + ccte[9]);
                 $('#redtsc').val("팀 점수 : "+ redt);
                 $('#bluetsc').val("팀 점수 : "+ bluet);
-                break;
-            } else{
-                continue;
-            }
-                for(var j = 0 ; j < 1000 ; j++) {
-            var ccname = new Array;
-            var ccsc = new Array;
-            var ccte = new Array;
-            var playerx = [$('#player1').val(), $('#player2').val(), $('#player3').val(), $('#player4').val(), $('#player5').val(), $('#player6').val(), $('#player7').val(), $('#player8').val(), $('#player9').val(), $('#player10').val()];
-            var playerscx = [$("#player1c option:selected").val() * 1, $("#player2c option:selected").val() * 1, $("#player3c option:selected").val() * 1, $("#player4c option:selected").val() * 1, $("#player5c option:selected").val() * 1, $("#player6c option:selected").val() * 1, $("#player7c option:selected").val() * 1, $("#player8c option:selected").val() * 1, $("#player9c option:selected").val() * 1, $("#player10c option:selected").val() * 1, ];
-            var playertex = [$("#player1c option:selected").text(), $("#player2c option:selected").text(), $("#player3c option:selected").text(), $("#player4c option:selected").text(), $("#player5c option:selected").text(), $("#player6c option:selected").text(), $("#player7c option:selected").text(), $("#player8c option:selected").text(), $("#player9c option:selected").text(), $("#player10c option:selected").text(), ];
-            for(var i = 9 ; i > -1 ; i--){
-                var rt = (Math.floor(Math.random() * i));
-                ccname.push(playerx[rt]);
-                ccsc.push(playerscx[rt]);
-                ccte.push(playertex[rt]);
-                playerx.splice(rt, 1);
-                playerscx.splice(rt, 1);
-                playertex.splice(rt, 1);
-            }
-            var redt = ccsc[0] + ccsc[1] + ccsc[2] + ccsc[3] + ccsc[4];
-            var bluet = ccsc[5] + ccsc[6] + ccsc[7] + ccsc[8] + ccsc[9];
-            if(redt - bluet > -9  && redt- bluet < 9){
-                $('#setplayer1').val(ccname[0] + ' : ' + ccte[0]);
-                $('#setplayer2').val(ccname[1] + ' : ' + ccte[1]);
-                $('#setplayer3').val(ccname[2] + ' : ' + ccte[2]);
-                $('#setplayer4').val(ccname[3] + ' : ' + ccte[3]);
-                $('#setplayer5').val(ccname[4] + ' : ' + ccte[4]);
-                $('#setplayer6').val(ccname[5] + ' : ' + ccte[5]);
-                $('#setplayer7').val(ccname[6] + ' : ' + ccte[6]);
-                $('#setplayer8').val(ccname[7] + ' : ' + ccte[7]);
-                $('#setplayer9').val(ccname[8] + ' : ' + ccte[8]);
-                $('#setplayer10').val(ccname[9] + ' : ' + ccte[9]);
-                $('#redtsc').val("팀 점수 : "+ redt);
-                $('#bluetsc').val("팀 점수 : "+ bluet);
-                alert("최적의 팀 밸런스가 계산되지 않아 최선의 팀 밸런스로 팀이 짜여집니다.")
                 break;
             } else{
                 continue;
             }
                 alert("팀 밸런스를 맞출 수 없는 플레이어들입니다.");
             }
+
         }        
     </script>
     </head>
@@ -209,7 +174,7 @@
             <p align="center"><input style = "text-align:center;" id = "setplayer4" type="text" name="setplayer4" size="30" maxlength="30"/></p>
             <p align="center"><input style = "text-align:center;" id = "setplayer5" type="text" name="setplayer5" size="30" maxlength="30"/></p>
             <br/>
-            <p align="center"><input style = "text-align:center;" id = "redtsc" type="text" name="redtsc" size="10" maxlength="10"/></p>
+            <p align="center"><input style = "text-align:center;" id = "redtsc" type="text" name="setplayer5" size="10" maxlength="10"/></p>
         </div>
         <div style="height: auto; width: 340px; border:2px solid blue; float:right;">
             <p align="center">2팀</p>
@@ -219,7 +184,7 @@
             <p align="center"><input style = "text-align:center;" id = "setplayer9" type="text" name="setplayer9" size="30" maxlength="30"/></p>
             <p align="center"><input style = "text-align:center;" id = "setplayer10" type="text" name="setplayer10" size="30" maxlength="30"/></p>
             <br/>
-            <p align="center"><input style = "text-align:center;" id = "bluetsc" type="text" name="bluetsc" size="10" maxlength="10"/></p>
+            <p align="center"><input style = "text-align:center;" id = "bluetsc" type="text" name="setplayer5" size="10" maxlength="10"/></p>
         </div>
         </div>
     </body>
