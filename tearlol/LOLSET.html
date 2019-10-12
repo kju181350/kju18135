@@ -26,17 +26,17 @@
             }
             var redt = ccsc[0] + ccsc[1] + ccsc[2] + ccsc[3] + ccsc[4];
             var bluet = ccsc[5] + ccsc[6] + ccsc[7] + ccsc[8] + ccsc[9];
-            if(redt - bluet > -2  && redt- bluet < 2){
-                $('#setplayer1').val(ccname[0] + ' : ' + ccte[0]);
-                $('#setplayer2').val(ccname[1] + ' : ' + ccte[1]);
-                $('#setplayer3').val(ccname[2] + ' : ' + ccte[2]);
-                $('#setplayer4').val(ccname[3] + ' : ' + ccte[3]);
-                $('#setplayer5').val(ccname[4] + ' : ' + ccte[4]);
-                $('#setplayer6').val(ccname[5] + ' : ' + ccte[5]);
-                $('#setplayer7').val(ccname[6] + ' : ' + ccte[6]);
-                $('#setplayer8').val(ccname[7] + ' : ' + ccte[7]);
-                $('#setplayer9').val(ccname[8] + ' : ' + ccte[8]);
-                $('#setplayer10').val(ccname[9] + ' : ' + ccte[9]);
+            if(redt - bluet > -5  && redt- bluet < 5){
+                $('#setplayer1').val(ccte[0]);
+                $('#setplayer2').val(ccte[1]);
+                $('#setplayer3').val(ccte[2]);
+                $('#setplayer4').val(ccte[3]);
+                $('#setplayer5').val(ccte[4]);
+                $('#setplayer6').val(ccte[5]);
+                $('#setplayer7').val(ccte[6]);
+                $('#setplayer8').val(ccte[7]);
+                $('#setplayer9').val(ccte[8]);
+                $('#setplayer10').val(ccte[9]);
                 $('#redtsc').val("팀 점수 : "+ redt);
                 $('#bluetsc').val("팀 점수 : "+ bluet);
                 return;
@@ -62,17 +62,17 @@
             }
             var redt = ccsc[0] + ccsc[1] + ccsc[2] + ccsc[3] + ccsc[4];
             var bluet = ccsc[5] + ccsc[6] + ccsc[7] + ccsc[8] + ccsc[9];
-            if(redt - bluet > -3  && redt- bluet < 3){
-                $('#setplayer1').val(ccname[0] + ' : ' + ccte[0]);
-                $('#setplayer2').val(ccname[1] + ' : ' + ccte[1]);
-                $('#setplayer3').val(ccname[2] + ' : ' + ccte[2]);
-                $('#setplayer4').val(ccname[3] + ' : ' + ccte[3]);
-                $('#setplayer5').val(ccname[4] + ' : ' + ccte[4]);
-                $('#setplayer6').val(ccname[5] + ' : ' + ccte[5]);
-                $('#setplayer7').val(ccname[6] + ' : ' + ccte[6]);
-                $('#setplayer8').val(ccname[7] + ' : ' + ccte[7]);
-                $('#setplayer9').val(ccname[8] + ' : ' + ccte[8]);
-                $('#setplayer10').val(ccname[9] + ' : ' + ccte[9]);
+            if(redt - bluet > -11  && redt- bluet < 11){
+                $('#setplayer1').val(ccte[0]);
+                $('#setplayer2').val(ccte[1]);
+                $('#setplayer3').val(ccte[2]);
+                $('#setplayer4').val(ccte[3]);
+                $('#setplayer5').val(ccte[4]);
+                $('#setplayer6').val(ccte[5]);
+                $('#setplayer7').val(ccte[6]);
+                $('#setplayer8').val(ccte[7]);
+                $('#setplayer9').val(ccte[8]);
+                $('#setplayer10').val(ccte[9]);
                 $('#redtsc').val("팀 점수 : "+ redt);
                 $('#bluetsc').val("팀 점수 : "+ bluet);
                 alert("최적의 팀 배분이 불가능하여, 최소한의 밸런스로만 팀 조정됩니다.");
@@ -87,141 +87,323 @@
     </head>
     <body>
     <form name="form">
-        <div style="height: auto; width: 800px; border:2px solid gold; float:left;">
-        <input id = "player1" type="text" name="player1" size="20" maxlength="20" placeholder="PLAYER 1">
+        <div style="height: auto; width: 1080px; border:2px solid gold; float:left;">
         <select class="soflow" id="player1c">
-            <option value="1">F</option>
-            <option value="2">E</option>
-            <option value="3">D</option>
-            <option value="4">D+</option>
-            <option value="5">C</option>
-            <option value="6">C+</option>
-            <option value="7">B</option>
-            <option value="8">B+</option>
-            <option value="9">A</option>
-            <option value="10">A+</option>
+            <option value="10">감쟈</option>
+            <option value="18">건우</option>
+            <option value="34">데이</option>
+            <option value="25">똘리</option>
+            <option value="4">레블</option>
+            <option value="10">루이</option>
+            <option value="1">르티</option>
+            <option value="18">리젠</option>
+            <option value="21">문마</option>
+            <option value="18">베포</option>
+            <option value="29">벼리</option>
+            <option value="18">서스</option>
+            <option value="18">소다</option>
+            <option value="29">시안</option>
+            <option value="15">엔파</option>
+            <option value="15">연화</option>
+            <option value="1">유오</option>
+            <option value="29">은랑</option>
+            <option value="1">쟈미</option>
+            <option value="4">제그</option>
+            <option value="29">제드</option>
+            <option value="29">진언</option>
+            <option value="1">찌히</option>
+            <option value="4">차누</option>
+            <option value="1">태욱</option>
+            <option value="34">파이</option>
+            <option value="10">푸토</option>
+            <option value="10">한파</option>
+            <option value="15">호시</option>
         </select>
-            <input id = "player2" type="text" name="player2" size="20" maxlength="20" placeholder="PLAYER 2">
+
         <select class="soflow" id="player2c">
-            <option value="1">F</option>
-            <option value="2">E</option>
-            <option value="3">D</option>
-            <option value="4">D+</option>
-            <option value="5">C</option>
-            <option value="6">C+</option>
-            <option value="7">B</option>
-            <option value="8">B+</option>
-            <option value="9">A</option>
-            <option value="10">A+</option>
+            <option value="10">감쟈</option>
+            <option value="18">건우</option>
+            <option value="34">데이</option>
+            <option value="25">똘리</option>
+            <option value="4">레블</option>
+            <option value="10">루이</option>
+            <option value="1">르티</option>
+            <option value="18">리젠</option>
+            <option value="21">문마</option>
+            <option value="18">베포</option>
+            <option value="29">벼리</option>
+            <option value="18">서스</option>
+            <option value="18">소다</option>
+            <option value="29">시안</option>
+            <option value="15">엔파</option>
+            <option value="15">연화</option>
+            <option value="1">유오</option>
+            <option value="29">은랑</option>
+            <option value="1">쟈미</option>
+            <option value="4">제그</option>
+            <option value="29">제드</option>
+            <option value="29">진언</option>
+            <option value="1">찌히</option>
+            <option value="4">차누</option>
+            <option value="1">태욱</option>
+            <option value="34">파이</option>
+            <option value="10">푸토</option>
+            <option value="10">한파</option>
+            <option value="15">호시</option>
         </select>
-            <input id = "player3" type="text" name="player3" size="20" maxlength="20" placeholder="PLAYER 3">
         <select class="soflow" id="player3c">
-            <option value="1">F</option>
-            <option value="2">E</option>
-            <option value="3">D</option>
-            <option value="4">D+</option>
-            <option value="5">C</option>
-            <option value="6">C+</option>
-            <option value="7">B</option>
-            <option value="8">B+</option>
-            <option value="9">A</option>
-            <option value="10">A+</option>
+            <option value="10">감쟈</option>
+            <option value="18">건우</option>
+            <option value="34">데이</option>
+            <option value="25">똘리</option>
+            <option value="4">레블</option>
+            <option value="10">루이</option>
+            <option value="1">르티</option>
+            <option value="18">리젠</option>
+            <option value="21">문마</option>
+            <option value="18">베포</option>
+            <option value="29">벼리</option>
+            <option value="18">서스</option>
+            <option value="18">소다</option>
+            <option value="29">시안</option>
+            <option value="15">엔파</option>
+            <option value="15">연화</option>
+            <option value="1">유오</option>
+            <option value="29">은랑</option>
+            <option value="1">쟈미</option>
+            <option value="4">제그</option>
+            <option value="29">제드</option>
+            <option value="29">진언</option>
+            <option value="1">찌히</option>
+            <option value="4">차누</option>
+            <option value="1">태욱</option>
+            <option value="34">파이</option>
+            <option value="10">푸토</option>
+            <option value="10">한파</option>
+            <option value="15">호시</option>
         </select>
-            <input id = "player4" type="text" name="player4" size="20" maxlength="20" placeholder="PLAYER 4">
         <select class="soflow" id="player4c">
-            <option value="1">F</option>
-            <option value="2">E</option>
-            <option value="3">D</option>
-            <option value="4">D+</option>
-            <option value="5">C</option>
-            <option value="6">C+</option>
-            <option value="7">B</option>
-            <option value="8">B+</option>
-            <option value="9">A</option>
-            <option value="10">A+</option>
+            <option value="10">감쟈</option>
+            <option value="18">건우</option>
+            <option value="34">데이</option>
+            <option value="25">똘리</option>
+            <option value="4">레블</option>
+            <option value="10">루이</option>
+            <option value="1">르티</option>
+            <option value="18">리젠</option>
+            <option value="21">문마</option>
+            <option value="18">베포</option>
+            <option value="29">벼리</option>
+            <option value="18">서스</option>
+            <option value="18">소다</option>
+            <option value="29">시안</option>
+            <option value="15">엔파</option>
+            <option value="15">연화</option>
+            <option value="1">유오</option>
+            <option value="29">은랑</option>
+            <option value="1">쟈미</option>
+            <option value="4">제그</option>
+            <option value="29">제드</option>
+            <option value="29">진언</option>
+            <option value="1">찌히</option>
+            <option value="4">차누</option>
+            <option value="1">태욱</option>
+            <option value="34">파이</option>
+            <option value="10">푸토</option>
+            <option value="10">한파</option>
+            <option value="15">호시</option>
         </select>
-            <input id = "player5" type="text" name="player5" size="20" maxlength="20" placeholder="PLAYER 5">
         <select class="soflow" id="player5c">
-            <option value="1">F</option>
-            <option value="2">E</option>
-            <option value="3">D</option>
-            <option value="4">D+</option>
-            <option value="5">C</option>
-            <option value="6">C+</option>
-            <option value="7">B</option>
-            <option value="8">B+</option>
-            <option value="9">A</option>
-            <option value="10">A+</option>
+            <option value="10">감쟈</option>
+            <option value="18">건우</option>
+            <option value="34">데이</option>
+            <option value="25">똘리</option>
+            <option value="4">레블</option>
+            <option value="10">루이</option>
+            <option value="1">르티</option>
+            <option value="18">리젠</option>
+            <option value="21">문마</option>
+            <option value="18">베포</option>
+            <option value="29">벼리</option>
+            <option value="18">서스</option>
+            <option value="18">소다</option>
+            <option value="29">시안</option>
+            <option value="15">엔파</option>
+            <option value="15">연화</option>
+            <option value="1">유오</option>
+            <option value="29">은랑</option>
+            <option value="1">쟈미</option>
+            <option value="4">제그</option>
+            <option value="29">제드</option>
+            <option value="29">진언</option>
+            <option value="1">찌히</option>
+            <option value="4">차누</option>
+            <option value="1">태욱</option>
+            <option value="34">파이</option>
+            <option value="10">푸토</option>
+            <option value="10">한파</option>
+            <option value="15">호시</option>
         </select>
-            <input id = "player6" type="text" name="player6" size="20" maxlength="20" placeholder="PLAYER 6">
         <select class="soflow" id="player6c">
-            <option value="1">F</option>
-            <option value="2">E</option>
-            <option value="3">D</option>
-            <option value="4">D+</option>
-            <option value="5">C</option>
-            <option value="6">C+</option>
-            <option value="7">B</option>
-            <option value="8">B+</option>
-            <option value="9">A</option>
-            <option value="10">A+</option>
+            <option value="10">감쟈</option>
+            <option value="18">건우</option>
+            <option value="34">데이</option>
+            <option value="25">똘리</option>
+            <option value="4">레블</option>
+            <option value="10">루이</option>
+            <option value="1">르티</option>
+            <option value="18">리젠</option>
+            <option value="21">문마</option>
+            <option value="18">베포</option>
+            <option value="29">벼리</option>
+            <option value="18">서스</option>
+            <option value="18">소다</option>
+            <option value="29">시안</option>
+            <option value="15">엔파</option>
+            <option value="15">연화</option>
+            <option value="1">유오</option>
+            <option value="29">은랑</option>
+            <option value="1">쟈미</option>
+            <option value="4">제그</option>
+            <option value="29">제드</option>
+            <option value="29">진언</option>
+            <option value="1">찌히</option>
+            <option value="4">차누</option>
+            <option value="1">태욱</option>
+            <option value="34">파이</option>
+            <option value="10">푸토</option>
+            <option value="10">한파</option>
+            <option value="15">호시</option>
         </select>
-            <input id = "player7" type="text" name="player7" size="20" maxlength="20" placeholder="PLAYER 7">
         <select class="soflow" id="player7c">
-            <option value="1">F</option>
-            <option value="2">E</option>
-            <option value="3">D</option>
-            <option value="4">D+</option>
-            <option value="5">C</option>
-            <option value="6">C+</option>
-            <option value="7">B</option>
-            <option value="8">B+</option>
-            <option value="9">A</option>
-            <option value="10">A+</option>
+            <option value="10">감쟈</option>
+            <option value="18">건우</option>
+            <option value="34">데이</option>
+            <option value="25">똘리</option>
+            <option value="4">레블</option>
+            <option value="10">루이</option>
+            <option value="1">르티</option>
+            <option value="18">리젠</option>
+            <option value="21">문마</option>
+            <option value="18">베포</option>
+            <option value="29">벼리</option>
+            <option value="18">서스</option>
+            <option value="18">소다</option>
+            <option value="29">시안</option>
+            <option value="15">엔파</option>
+            <option value="15">연화</option>
+            <option value="1">유오</option>
+            <option value="29">은랑</option>
+            <option value="1">쟈미</option>
+            <option value="4">제그</option>
+            <option value="29">제드</option>
+            <option value="29">진언</option>
+            <option value="1">찌히</option>
+            <option value="4">차누</option>
+            <option value="1">태욱</option>
+            <option value="34">파이</option>
+            <option value="10">푸토</option>
+            <option value="10">한파</option>
+            <option value="15">호시</option>
         </select>
-            <input id = "player8" type="text" name="player8" size="20" maxlength="20" placeholder="PLAYER 8">
         <select class="soflow" id="player8c">
-            <option value="1">F</option>
-            <option value="2">E</option>
-            <option value="3">D</option>
-            <option value="4">D+</option>
-            <option value="5">C</option>
-            <option value="6">C+</option>
-            <option value="7">B</option>
-            <option value="8">B+</option>
-            <option value="9">A</option>
-            <option value="10">A+</option>
+            <option value="10">감쟈</option>
+            <option value="18">건우</option>
+            <option value="34">데이</option>
+            <option value="25">똘리</option>
+            <option value="4">레블</option>
+            <option value="10">루이</option>
+            <option value="1">르티</option>
+            <option value="18">리젠</option>
+            <option value="21">문마</option>
+            <option value="18">베포</option>
+            <option value="29">벼리</option>
+            <option value="18">서스</option>
+            <option value="18">소다</option>
+            <option value="29">시안</option>
+            <option value="15">엔파</option>
+            <option value="15">연화</option>
+            <option value="1">유오</option>
+            <option value="29">은랑</option>
+            <option value="1">쟈미</option>
+            <option value="4">제그</option>
+            <option value="29">제드</option>
+            <option value="29">진언</option>
+            <option value="1">찌히</option>
+            <option value="4">차누</option>
+            <option value="1">태욱</option>
+            <option value="34">파이</option>
+            <option value="10">푸토</option>
+            <option value="10">한파</option>
+            <option value="15">호시</option>
         </select>
-            <input id = "player9" type="text" name="player9" size="20" maxlength="20" placeholder="PLAYER 9">
         <select class="soflow" id="player9c">
-            <option value="1">F</option>
-            <option value="2">E</option>
-            <option value="3">D</option>
-            <option value="4">D+</option>
-            <option value="5">C</option>
-            <option value="6">C+</option>
-            <option value="7">B</option>
-            <option value="8">B+</option>
-            <option value="9">A</option>
-            <option value="10">A+</option>
+            <option value="10">감쟈</option>
+            <option value="18">건우</option>
+            <option value="34">데이</option>
+            <option value="25">똘리</option>
+            <option value="4">레블</option>
+            <option value="10">루이</option>
+            <option value="1">르티</option>
+            <option value="18">리젠</option>
+            <option value="21">문마</option>
+            <option value="18">베포</option>
+            <option value="29">벼리</option>
+            <option value="18">서스</option>
+            <option value="18">소다</option>
+            <option value="29">시안</option>
+            <option value="15">엔파</option>
+            <option value="15">연화</option>
+            <option value="1">유오</option>
+            <option value="29">은랑</option>
+            <option value="1">쟈미</option>
+            <option value="4">제그</option>
+            <option value="29">제드</option>
+            <option value="29">진언</option>
+            <option value="1">찌히</option>
+            <option value="4">차누</option>
+            <option value="1">태욱</option>
+            <option value="34">파이</option>
+            <option value="10">푸토</option>
+            <option value="10">한파</option>
+            <option value="15">호시</option>
         </select>
-            <input id = "player10" type="text" name="player10" size="20" maxlength="20" placeholder="PLAYER 10">
+
         <select class="soflow" id="player10c">
-            <option value="1">F</option>
-            <option value="2">E</option>
-            <option value="3">D</option>
-            <option value="4">D+</option>
-            <option value="5">C</option>
-            <option value="6">C+</option>
-            <option value="7">B</option>
-            <option value="8">B+</option>
-            <option value="9">A</option>
-            <option value="10">A+</option>
+            <option value="10">감쟈</option>
+            <option value="18">건우</option>
+            <option value="34">데이</option>
+            <option value="25">똘리</option>
+            <option value="4">레블</option>
+            <option value="10">루이</option>
+            <option value="1">르티</option>
+            <option value="18">리젠</option>
+            <option value="21">문마</option>
+            <option value="18">베포</option>
+            <option value="29">벼리</option>
+            <option value="18">서스</option>
+            <option value="18">소다</option>
+            <option value="29">시안</option>
+            <option value="15">엔파</option>
+            <option value="15">연화</option>
+            <option value="1">유오</option>
+            <option value="29">은랑</option>
+            <option value="1">쟈미</option>
+            <option value="4">제그</option>
+            <option value="29">제드</option>
+            <option value="29">진언</option>
+            <option value="1">찌히</option>
+            <option value="4">차누</option>
+            <option value="1">태욱</option>
+            <option value="34">파이</option>
+            <option value="10">푸토</option>
+            <option value="10">한파</option>
+            <option value="15">호시</option>
         </select>
             <p align="center"><input type="button" value="시작" onclick="input_Text();"></p>
             </div>
     </form>
-        <div style="height= auto; width: 780px; margin-left: 35px;">
+        <div style="height= auto; width: 780px; margin-left: 172px;">
         <div style="height: auto; width: 340px; border:2px solid red; float:left;">
             <p align="center">1팀</p>
             <p align="center"><input style = "text-align:center;" id = "setplayer1" type="text" name="setplayer1" size="30" maxlength="30"/></p>
